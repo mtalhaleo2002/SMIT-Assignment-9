@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PAGE</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+    <script type="text/javascript">
+        swfobject.embedSWF("flash/bird.swf",
+            "bird", "400", "300", "8.0.0");</script>
+</head>
+
+<body>
+    <!-- ADDING A FLASH MOVIE TO YOUR WEB PAGE-->
+    <h2>ADDING A FLASH MOVIE TO YOUR WEB PAGE </h2>
+    <div id="bird">
+        <p>An animation of a bird taking a shower</p>
+        <!-- It can,t be seen because files is not available in the folder I can simply show you how can be happen -->
+    </div>
+
+    <!-- HTML5: ADDING VIDEOS TO YOUR PAGES -->
+    <h2>HTML5: ADDING VIDEOS TO YOUR PAGES </h2>
+    <video src="videos/puppy.mp4" poster="images/puppy.jpg" width="400" height="300" preload controls loop>
+        <p>A video of a puppy playing in the sand</p>
+    </video>
+
+    <!-- HTML5: MULTIPLE VIDEO SOURCES -->
+    <h2>HTML5: MULTIPLE VIDEO SOURCES </h2>
+    <video width="400" height="320" preload controls loop>
+        <source src="videos/puppy2.mp4" type='video/mp4' />
+        <p>Your browser does not support the video tag.</p>
+        <!-- Now Html doesn,t support multiple video sources I tested it on Chrome but didn,t work -->
+    </video>
+
+    <!-- HTML5: ADDING HTML5 AUDIO TO YOUR PAGES  -->
+    <h2>HTML5: ADDING HTML5 AUDIO TO YOUR PAGES </h2>
+    <audio src="audio/audio.mp3" controls autoplay>
+        <p>This browser does not support our audio
+            format.</p>
+    </audio>
+
+    <!-- HTML5: MULTIPLE AUDIO SOURCES  -->
+    <h2>HTML5: MULTIPLE AUDIO SOURCES </h2>
+    <audio controls autoplay>
+        <source src="audio/audio.mp3" />
+        <p>This browser does not support our audio
+            format.</p>
+        <!-- Now Html doesn,t support multiple audio sources I tested it on Chrome but didn,t work -->
+    </audio>
+
+    <!-- EXAMPLE OF FLASH, AUDIO & VIDEO ELEMENTS UNDERSTAND IN 8TH CHAPTER  -->
+    <h2>EXAMPLE OF FLASH, AUDIO & VIDEO ELEMENTS UNDERSTAND IN 8TH CHAPTER </h2>
+    <video width="400" height="320" controls="controls">
+        <source src="videos/puppy.mp4" type='video/mp4' />
+        <div id="snow">
+            <p>You cannot see this video of a puppy playing
+                in thE sand because this browser does not
+                support our video formats.</p>
+        </div>
+    </video>
+</body>
+
+</html>
